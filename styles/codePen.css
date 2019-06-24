@@ -1,0 +1,45 @@
+body {
+    background-color: #191A1D;
+}
+.topBar {
+    margin: -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+.topBar > .logo {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    
+}
+.explore {
+    grid-column: 2;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+.afterExplore {
+    grid-column: 3;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    font-size: 16px;
+    color: #acacac;
+}
+.search {
+    grid-column: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
