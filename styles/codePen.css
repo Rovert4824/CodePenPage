@@ -1,24 +1,31 @@
+*,*:before,*:after {
+    margin: 0px;
+}
 body {
     background-color: #191A1D;
 }
+
 .topBar {
-    margin: -10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
-    
+    grid-template-columns: .7fr 2fr 2fr 1fr;
     align-items: center;
+    justify-content: space-around;
     position: relative;
     background-color: black;
+    width: 100%;
+    grid-column-gap: 10px;
 }
-.topBar > .logo {
+
+.topBar>.logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     grid-column: 1;
-    
+
 }
+
 .explore {
-    grid-column: 2;
-    
+    grid-row: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +33,14 @@ body {
     font-size: 16px;
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 }
+
+.empty{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 .afterExplore {
-    grid-column: 3;
-    
+    grid-row: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,10 +48,45 @@ body {
     font-size: 16px;
     color: #acacac;
 }
+
 .search {
-    grid-column: 5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: space-between;
     color: white;
+}
+
+.searchLogo {
+    color: white;
+}
+.pro {
+    background-color: #ffdd40;
+    border-radius: 3px;
+    border: 2px solid #ffdd40;
+    color: black;
+    font-size: 10px;
+}
+
+.theMiddle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.ExploreWord {
+    grid-row: 1;
+    color: #f4e17f;
+    text-transform: uppercase;
+    font-size: .83rem;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+.theRealMiddle {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
 }
